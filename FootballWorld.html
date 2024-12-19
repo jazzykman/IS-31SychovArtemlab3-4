@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Football Balls</title>
+    <title>FootballWorld</title>
     <link rel="stylesheet" href="FootballWorld.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
@@ -23,53 +23,58 @@
   <body>
     <header class="header">
       <div class="header-title">
-        <h1 id="site-title">Football Balls</h1>
+        <h1 id="site-title">FootballWorld</h1>
       </div>
     </header>
     <main>
       <nav class="navigation">
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <ul class="nav-list" id="navList">
-          <li><a href="#about">Про м'ячі</a></li>
-          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#about">Про футбол</a></li>
+          <li><a href="#gallery">Види м'ячів</a></li>
           <li><a href="#design">Дизайн м'ячів</a></li>
-          <li><a href="#stats">Статистика м'ячів</a></li>
+          <li><a href="#ball-stats">Статистика м'ячів</a></li>
         </ul>
       </nav>
 
       <section id="about" class="about-section">
-        <h2>Про м'ячі</h2>
+        <h2>Про футбол</h2>
         <p>
-          Футбольні м'ячі — це ключовий елемент гри в футбол. Вони пройшли через
-          численні етапи розвитку, від простих шкіряних м'ячів до сучасних
-          технологічних моделей.
+          Футбол — це найпопулярніший вид спорту в світі, який об'єднує мільйони
+          людей. М'ячі є важливою частиною гри, і від їхнього дизайну залежить
+          якість матчів та відчуття гравців.
         </p>
-        <h3>Типи футбольних м'ячів</h3>
+        <h3>Класифікація м'ячів</h3>
         <ul class="classification-list">
-          <li>М'ячі для матчів</li>
+          <li>Матчеві м'ячі</li>
           <li>Тренувальні м'ячі</li>
-          <li>М'ячі для дітей</li>
+          <li>М'ячі для футзалу</li>
         </ul>
+        <h3>Роль м'ячів у грі</h3>
+        <p>
+          Розміри, матеріали та дизайн м'ячів впливають на точність ударів,
+          траєкторію польоту та комфорт гри.
+        </p>
       </section>
 
       <section id="gallery" class="gallery-section">
         <h2>Галерея м'ячів</h2>
         <div class="gallery-grid">
-          <figure class="classic" data-design="classic">
-            <img src="./img/classic-ball.png" alt="Класичний м'яч" />
-            <figcaption>Класичний м'яч</figcaption>
+          <figure class="adidas-telstar" data-ball="adidas-telstar">
+            <img src="./img/telstar.jpg" alt="Adidas Telstar" />
+            <figcaption>Adidas Telstar</figcaption>
           </figure>
-          <figure class="modern" data-design="modern">
-            <img src="./img/futuristic-ball.png" alt="Сучасний м'яч" />
-            <figcaption>Сучасний м'яч</figcaption>
+          <figure class="adidas-brazuca" data-ball="adidas-brazuca">
+            <img src="./img/brazuca.avif" alt="Adidas Brazuca" />
+            <figcaption>Adidas Brazuca</figcaption>
           </figure>
-          <figure class="training" data-design="training">
-            <img src="./img/training-ball.jpg" alt="Тренувальний м'яч" />
-            <figcaption>Тренувальний м'яч</figcaption>
+          <figure class="adidas-al-rihla" data-ball="adidas-al-rihla">
+            <img src="./img/alrihla.jpg" alt="Adidas Al Rihla" />
+            <figcaption>Adidas Al Rihla</figcaption>
           </figure>
-          <figure class="Futsal" data-design="Futsal">
-            <img src="./img/futsal.webp" alt="Тренувальний м'яч" />
-            <figcaption>Футзальний м'яч</figcaption>
+          <figure class="futuristic" data-ball="modern-ball">
+            <img src="./img/futuristic-ball.png" alt="modern-ball" />
+            <figcaption>modern-ball</figcaption>
           </figure>
         </div>
       </section>
@@ -77,66 +82,71 @@
       <section id="design" class="design-section">
         <h2>Дизайн м'ячів</h2>
         <div class="design-list">
-          <article class="design-item">
-            <h3>Класичний м'яч</h3>
+          <article class="design">
+            <h3>Adidas Telstar</h3>
             <p>
-              Цей м'яч має традиційний вигляд з п'ятьма чорними та білими
-              панелями, що стало символом футболу.
+              М'яч, який став символом футбольного чемпіонату 1970 року. Зі
+              своєю класичною чорно-білою палітрою, він знову був використаний у
+              2018 році.
             </p>
+            <a href="adidas-telstar.html" class="details-link">Детальніше</a>
           </article>
-          <article class="design-item">
-            <h3>Сучасний м'яч</h3>
+          <article class="design">
+            <h3>Adidas Brazuca</h3>
             <p>
-              Сучасний м'яч виготовлений з новітніх матеріалів, що забезпечує
-              кращу аеродинаміку та контроль.
+              Офіційний м'яч чемпіонату світу 2014 року. Він славиться своїм
+              унікальним дизайном і стабільними польотними характеристиками.
             </p>
+            <a href="adidas-brazuca.html" class="details-link">Детальніше</a>
           </article>
-          <article class="design-item">
-            <h3>Тренувальний м'яч</h3>
+          <article class="design">
+            <h3>Adidas Al Rihla</h3>
             <p>
-              М'ячі для тренувань мають підвищену міцність і можуть
-              використовуватися в будь-яких погодних умовах.
+              М'яч, створений для чемпіонату світу 2022 року, використовуючи
+              еко-дружні матеріали, що підкреслюють зобов'язання до сталого
+              розвитку.
             </p>
+            <a href="adidas-al-rihla.html" class="details-link">Детальніше</a>
           </article>
         </div>
       </section>
 
-      <section id="stats" class="stats-section">
+      <section id="ball-stats" class="stats-section">
         <h2>Статистика м'ячів</h2>
         <table class="stats-table">
           <thead>
             <tr>
-              <th>Тип м'яча</th>
-              <th>Розмір</th>
+              <th>Назва</th>
+              <th>Розмір (см)</th>
               <th>Матеріал</th>
-              <th>Мета використання</th>
+              <th>Призначення</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Класичний</td>
-              <td>5</td>
-              <td>Шкіра</td>
-              <td>Матчі</td>
+              <td>Adidas Telstar</td>
+              <td>68-70</td>
+              <td>Поліуретан</td>
+              <td>Офіційні матчі</td>
             </tr>
             <tr>
-              <td>Сучасний</td>
-              <td>5</td>
-              <td>Технополімер</td>
-              <td>Матчі</td>
+              <td>Adidas Brazuca</td>
+              <td>68-70</td>
+              <td>Синтетичний матеріал</td>
+              <td>Чемпіонати світу</td>
             </tr>
             <tr>
-              <td>Тренувальний</td>
-              <td>5</td>
-              <td>Пластик</td>
-              <td>Тренування</td>
+              <td>Adidas Al Rihla</td>
+              <td>68-70</td>
+              <td>Еко-матеріали</td>
+              <td>Сучасні турніри</td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
     <footer class="footer">
-      <p>© 2024 Football Balls. Всі права захищені.</p>
+      <p>© 2024 FootballWorld. Всі права захищені.</p>
     </footer>
   </body>
 </html>
