@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Balls</title>
+    <link rel="stylesheet" href="FootballWorld.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleMenu() {
+        const navList = document.getElementById("navList");
+        navList.classList.toggle("show");
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">
+        <h1 id="site-title">Football Balls</h1>
+      </div>
+    </header>
+    <main>
+      <nav class="navigation">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">Про м'ячі</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#design">Дизайн м'ячів</a></li>
+          <li><a href="#stats">Статистика м'ячів</a></li>
+        </ul>
+      </nav>
+
+      <section id="about" class="about-section">
+        <h2>Про м'ячі</h2>
+        <p>
+          Футбольні м'ячі — це ключовий елемент гри в футбол. Вони пройшли через
+          численні етапи розвитку, від простих шкіряних м'ячів до сучасних
+          технологічних моделей.
+        </p>
+        <h3>Типи футбольних м'ячів</h3>
+        <ul class="classification-list">
+          <li>М'ячі для матчів</li>
+          <li>Тренувальні м'ячі</li>
+          <li>М'ячі для дітей</li>
+        </ul>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <h2>Галерея м'ячів</h2>
+        <div class="gallery-grid">
+          <figure class="classic" data-design="classic">
+            <img src="./img/classic-ball.png" alt="Класичний м'яч" />
+            <figcaption>Класичний м'яч</figcaption>
+          </figure>
+          <figure class="modern" data-design="modern">
+            <img src="./img/futuristic-ball.png" alt="Сучасний м'яч" />
+            <figcaption>Сучасний м'яч</figcaption>
+          </figure>
+          <figure class="training" data-design="training">
+            <img src="./img/training-ball.jpg" alt="Тренувальний м'яч" />
+            <figcaption>Тренувальний м'яч</figcaption>
+          </figure>
+          <figure class="Futsal" data-design="Futsal">
+            <img src="./img/futsal.webp" alt="Тренувальний м'яч" />
+            <figcaption>Футзальний м'яч</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="design" class="design-section">
+        <h2>Дизайн м'ячів</h2>
+        <div class="design-list">
+          <article class="design-item">
+            <h3>Класичний м'яч</h3>
+            <p>
+              Цей м'яч має традиційний вигляд з п'ятьма чорними та білими
+              панелями, що стало символом футболу.
+            </p>
+          </article>
+          <article class="design-item">
+            <h3>Сучасний м'яч</h3>
+            <p>
+              Сучасний м'яч виготовлений з новітніх матеріалів, що забезпечує
+              кращу аеродинаміку та контроль.
+            </p>
+          </article>
+          <article class="design-item">
+            <h3>Тренувальний м'яч</h3>
+            <p>
+              М'ячі для тренувань мають підвищену міцність і можуть
+              використовуватися в будь-яких погодних умовах.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="stats" class="stats-section">
+        <h2>Статистика м'ячів</h2>
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Тип м'яча</th>
+              <th>Розмір</th>
+              <th>Матеріал</th>
+              <th>Мета використання</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Класичний</td>
+              <td>5</td>
+              <td>Шкіра</td>
+              <td>Матчі</td>
+            </tr>
+            <tr>
+              <td>Сучасний</td>
+              <td>5</td>
+              <td>Технополімер</td>
+              <td>Матчі</td>
+            </tr>
+            <tr>
+              <td>Тренувальний</td>
+              <td>5</td>
+              <td>Пластик</td>
+              <td>Тренування</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2024 Football Balls. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>
